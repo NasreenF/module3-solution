@@ -3,16 +3,297 @@
 <head>
 	<meta charset= "utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Assignment 3</title>
+<style type="text/css">
+ body{
+	font-size: 16px;
+	color: white;
+	background-color: black;
+	font-family: cursive;
+}
+
+
+#header-nav{
+	background-color: red;
+	border-radius: 0;
+    border: 0;
+}
+.topnav{
+	background-color: red;
+height: 80px;
+border-radius: 0;
+border:0;
+padding: 0;
+margin: 0px;
+text-align: justify;
+font-size: xx-large;
+
+}
+
+p{
+	border: 1px solid black;
+	background-color: yellow;
+	width: 80%;
+	height: 300px;
+	font-family: cursive;
+	margin-bottom: 10px;
+	margin-top:  200px;
+	margin-left: 160Px;
+	color: black;
+text-align: center; 
+}
+h1{
+	text-align: center;
+	font-size: xx-large; 
+}
+
+* {
+		margin-bottom: 0px;
+		padding: 0;
+
+
+	}
+	ul {
+		width:100%;
+      
+	}
+
+	li {
+		width:33%;
+		float:left;
+		border-right: 1px solid #eee;
+	}
+	li:last-child {
+		border-right:none;
+	}
+
+	li a {
+		display: block;
+		width:80%;
+		background:orange;
+		padding:4% 10%;
+		font-size:1.35em;
+		text-decoration: none;
+	}
+    
+  
+
+
+	@media screen and (max-width: 767px) {
+		#menu {
+			width:1.4em;
+			display: block;
+			background:#ddd;
+			font-size:1.35em;
+			text-align: center;
+			background-color: #eee;
+		}
+		#menu a:hover {
+  background-color: #ccc;
+}
+		#nav.js {
+			display: none;
+		}
+		ul {
+			width:100%;
+			list-style:none;
+			text-align: center;
+		}
+		li {
+			width:100%;
+			border-right:none;
+		}
+		p{border: 1px solid black;
+	background-color: yellow;
+	width: 80%;
+	height:800px;
+	font-family: cursive;
+	margin-bottom: 10px;
+	margin-top:  200px;
+	margin-left: 160Px;
+	color: black;
+text-align: center; 
+
+		}
+	}
+
+	@media screen and (min-width: 768px) {
+		#menu {
+			display: none;
+		}
+		ul { display: none;
+		 }
+		 li{
+		 	display: none;
+		 }
+	}
+/* Simple responsive framework. */
+.rows: {
+	width: 100%;
+	max-height: 2500px;
+		}
+
+		/* medium and large devices only */
+
+ 	 @media (min-width: 768px)  {
+	.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-10, .col-md-11, .col-md-12 {
+	
+	border: 1px solid black;
+	max-height: 300px;
+ }
+ .col-md-1 {
+	width: 8.33%
+ }
+ .col-md-2 {
+	width: 16.66%
+ }
+ .col-md-3 {
+	width: 25%
+ }
+ .col-md-4{
+ 	width:33.33%;
+ }
+ .col-md-5{
+ 	width:41.66%;
+ }
+ .col-md-6{
+ 	width: 50%;
+ 	 }
+ 	 .col-md-7{
+ 	 	width: 58.33%;
+ 	 	 	 }
+ 	 .col-md-8{
+ 	 	width:66.66%;
+ 	 }	 	 
+ 	 .col-md-9{
+ 	 	width:75%;
+ 	 }
+ 	 .col-md-10{
+ 	 	width:83.33%;
+ 	 }
+ 	 .col-md-11{
+ 	 	width:91.66%;
+ 	 }
+ 	 .col-md-12{
+ 	 	width:100%;
+ 	 }
+}
+
+
+/********** small devices only **********/
+@media (max-width: 768)  {
+	.style {
+
+border: 1px solid black;
+	background-color: yellow;
+	width: 100%;
+	height: 500px;
+	font-family: cursive;
+	margin-bottom: 10px;
+	margin-top:  200px;
+	margin-left: 50Px;
+	color: black;
+text-align: center; 
+
+
+	}
+}
+
+
+@media (max-width: 768px) {
+	.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-10, .col-sm-11, .col-sm-12 {
+		border: 1px solid black;
+
+ }
+ .col-sm-1 {
+	width: 8.33%
+ }
+ .col-sm-2 {
+	width: 16.66%
+ }
+ .col-sm-3 {
+	width: 25%
+ }
+ .col-sm-4{
+ 	width:33.33%;
+ }
+ .col-sm-5{
+ 	width:41.66%;
+ }
+ .col-sm-6{
+ 	width: 50%;
+ 	 }
+ 	 .col-sm-7{
+ 	 	width: 58.33%;
+ 	 	 	 }
+ 	 .col-sm-8{
+ 	 	width:66.66%;
+ 	 }	 	 
+ 	 .col-sm-9{
+ 	 	width:75%;
+ 	 }
+ 	 .col-sm-10{
+ 	 	width:83.33%;
+ 	 }
+ 	 .col-sm-11{
+ 	 	width:91.66%;
+ 	 }
+ 	 .col-sm-12{
+ 	 	width:100%;
+
+ 	 }
+}
+
+</style>
 </head>
 <body>
 	<header>
+		<div class="topnav">
+			<a class="active">  Food, LLC </a>
+		</div>
 		<nav id="header-nav" class="navbar navbar-default">
 			<div classs="container">
+				<div class="navbar-header">
 
 			</div>
 		</nav>
 	</header>
-<h1> 
+	<h1> MENU</h1>
+	<ul id="nav">
+	<li><a href="#Chicken">Chicken</a></li>
+	<li><a href="#BEEF">Beef</a></li>
+	<li><a href="#Sushi">Sushi</a></li>
+</ul><br>
+<script type="text/javascript">
+	$("#nav").addClass("js").before('<div id="menu">&#9776;</div>');
+	$("#menu").click(function(){
+		$("#nav").toggle();
+	});
+	$(window).resize(function(){
+		if(window.innerWidth > 768) {
+			$("#nav").removeAttr("style");
+		}
+	});
+</script>
+ <div class="rows";>
+
+	<div class="col-md-12-12 col-sm-12"> <p id="Chicken" p="style">CHICKEN <BR> 
+CHICKEN IS OUR SPECIAL DISH. We make all type of chicken receipies.Chicken is a Punjabi cuisine favorite. Murg Malaiwala, Kerala Chicken Roast, Chicken Chettinad, Spicy Tangy Kadhai Chicken, Chana Aur Khatte Pyaaz Ka Murgh, Butter Chicken are some of the famous chicken dishes we serve.Chicken can be prepared in a vast range of ways, including baking, grilling, barbecuing, frying, and boiling, among many others, depending on its purpose. Since the latter half of the 20th century, prepared chicken has become a staple of fast food. Chicken is sometimes cited as being more healthful than red meat, with lower concentrations of cholesterol and saturated fat. Chicken can be cooked in many ways. It can be made into sausages, skewered, put in salads, traditionally grilled or by using electric grill, breaded and deep-fried, or used in various curries. There is significant variation in cooking methods amongst cultures. Historically common methods include roasting, baking, broasting, and frying. Western cuisine frequently has chicken prepared by deep frying for fast foods such as fried chicken, chicken nuggets, chicken lollipops or Buffalo wings. They are also often grilled for salads or tacos.
+Chickens often come with labels such as "roaster", which suggest a method of cooking based on the type of chicken. While these labels are only suggestions, ones labeled for stew often do not do well when cooked with other methods</p></div>
+
+<div class="col-md-12-12 col-sm-12"> <p id="BEEF">BEEF<BR>
+
+	Beef is the culinary name for meat from cattle, particularly skeletal muscle. Humans have been eating beef since prehistoric times. Beef is a source of protein and nutrients.Beef is a source of complete protein and it is a rich source (20% or more of the Daily Value, DV) of Niacin, Vitamin B12, iron and zinc.Red meat is the most significant dietary source of carnitine and, like any other meat (pork, fish, veal, lamb etc.), is a source of creatine. Creatine is converted to creatinine during cooking. Meat, beef, beef jerky, hotdogs, lamb chops ARE SOME OF OUR FAMOUS BEEF DISHES.Butchering practices differ among countries, resulting in a variety of names for the different cuts. In the United States, where beef is the most popular meat, steaks—cross-sections from the fleshier parts of the carcass—are among the most desirable cuts. The standing rib roast, called in Britain the best rib, is also a valued cut. Less desirable cuts may be pot-roasted, used in stews, or ground (see hamburger). Boiled beef is popular in some cuisines, as in the French dish known as pot-au-feu. Corned beef (or salt beef in Britain) is a brisket or rump cut that has been pickled in brine.The primary beef-consuming countries of the world (in per capita terms) are Uruguay, Argentina, New Zealand, Australia, and the United States. Beef is relatively scarce—and not particularly popular—in most of Southeast Asia, Africa, and the Indian subcontinent; the sanctity of the cow in the Hindu religion forbids the consumption of its meat by Hindu adherents.</p></div>
+
+	<div class="col-md-12-12 col-sm-12"><P id="Sushi">SUSHI<BR>
+	Sushi is traditionally made with medium-grain white rice, though it can be prepared with brown rice or short-grain rice. It is very often prepared with seafood, such as squid, eel, yellowtail, salmon, tuna or imitation crab meat. Many types of sushi are vegetarian. It is often served with pickled ginger (gari), wasabi, and soy sauce. Daikon radish or pickled daikon (takuan) are popular garnishes for the dish. Gunkan Maki,
+Temaki,Narezushi,Nigiri,Oshizushi,
+Sasazushi,Kakinoha-zushi ARE SOME OF OUR FAMOUS SUSHIES.Unlike sashimi, which is almost always eaten with chopsticks, nigirizushi is traditionally eaten with the fingers, even in formal settings.Although it is commonly served on a small platter with a side dish for dipping, sushi can also be served in a bento, a box with small compartments that hold the various dishes of the meal.
+
+Soy sauce is the usual condiment, and sushi is normally served with a small sauce dish, or a compartment in the bento. Traditional etiquette suggests that the sushi is turned over so that only the topping is dipped; this is because the soy sauce is for flavoring the topping, not the rice, and because the rice would absorb too much soy sauce and would fall apart.If it is difficult to turn the sushi upside-down, one can baste the sushi in soy sauce using gari (sliced ginger) as a brush. Toppings that have their own sauce (such as eel) should not be eaten with soy sauce.
+
+Traditionally, the sushi chef will add an appropriate amount of wasabi to the sushi while preparing it, and etiquette suggests eating the sushi as is, since the chef is supposed to know the proper amount of wasabi to use. However, today wasabi is more a matter of personal taste, and even restaurants in Japan may serve wasabi on the side for customers to use at their discretion, even when there is wasabi already in the dish.
+</P></div>
 </body>
 </html>
